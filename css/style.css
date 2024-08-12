@@ -139,3 +139,11 @@ span {
   position: relative;
 }
 }
+
+@media screen and (max-width: 430px){
+  .content.selected {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+}
