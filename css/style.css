@@ -23,8 +23,9 @@ li {
 
 .tem {
   padding-top: 10px;
+  padding-left: 10px
   width: 33%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 
