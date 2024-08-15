@@ -133,6 +133,75 @@ span {
   padding: 10px;
 }
 
+
+/* ================
+ログイン画面
+================*/
+.textbox {
+  width: 350px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(215, 213, 213);
+  padding: 12px;
+}
+
+.textbox:hover {
+  background-color: rgb(221, 218, 218);
+}
+
+.button {
+  width: calc(20% + 30px);
+  height: 30px;
+  border: 1px solid rgb(145, 145, 145);
+  box-shadow: 1px 1px 1px gray;
+  border-radius: 5px;   
+}
+
+#main {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  /* height: 500px; */
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  /* margin: auto; */
+  border: 2px solid black;
+  padding: 30px;
+}
+
+.container > h1 {
+  text-align: center;
+}
+
+.container > p {
+  margin-bottom: 10px;
+}
+
+.showhide {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.showhide > p {
+  margin-left: 10px;
+}
+
+.button:hover {
+ background: rgb(145, 145, 145);
+}
+
+.margin {
+  display: block;
+  margin: 20px auto;
+}
+
 @media screen and (max-width: 937px){
 .content.selected {
   display: block;
