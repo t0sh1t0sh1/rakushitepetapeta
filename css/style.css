@@ -11,8 +11,35 @@ li {
 #header {
   text-align: center;
   background-color: rgb(173, 246, 240);
+  position: relative;
 }
 
+.count {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676D7;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+.count:hover {
+  background: #1d49aa;
+}
+
+.count-wrap {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.count-status {
+  margin-right: 40px;
+}
+ 
 /* テンプレ選択 */
 .tem-wrap {
   display: flex;
