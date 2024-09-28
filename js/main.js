@@ -12,24 +12,6 @@ $(function(){
     });
   });
 
-
-
-
-
-
-
-  // $('.copybtn6').on('click', function(){
-  //   var element = document.getElementById('copytxt6');
-  //   navigator.clipboard.writeText(element.textContent);
-
-  //   // フラッシュメッセージ表示
-  //   $('.msg').fadeIn(100, function(){
-  //     setTimeout(function(){
-  //       $('.msg').fadeOut(500);
-  //     }, 1000)
-  //   });
-  // });
-
 });
 
 
@@ -65,23 +47,42 @@ minusButton1.addEventListener("click", () => {
     count--;
     number.innerHTML = count;
   }
-})
+});
 
 minusButton5.addEventListener("click", () => {
   if (count > 4) {
     count -= 5;
     number.innerHTML = count;
   }
-})
+});
 
 minusButton10.addEventListener("click", () => {
   if (count > 9) {
     count -= 10;
     number.innerHTML = count;
   }
-})
+});
 
 resetButton.addEventListener("click", () => {
   count = 0;
   number.innerHTML = count;
+});
+
+
+// 比率ボタン
+const heightChange = document.querySelector('.height-change');
+const widthChange = document.querySelector('.width-change');
+const tempHeight = document.querySelectorAll('.wrap');
+const tempWidth = document.querySelectorAll('.content')
+
+heightChange.addEventListener("click", () => {
+  tempHeight.forEach(e => {
+    e.classList.toggle('half');
+  });
+});
+
+widthChange.addEventListener('click', () => {
+  tempWidth.forEach(e => {
+    e.classList.toggle('twice')
+  });
 });

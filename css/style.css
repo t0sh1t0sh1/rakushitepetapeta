@@ -14,7 +14,9 @@ li {
   position: relative;
 }
 
-.count {
+.count,
+.height-change,
+.width-change {
   appearance: none;
   border: 0;
   border-radius: 5px;
@@ -24,8 +26,22 @@ li {
   font-size: 16px;
 }
 
-.count:hover {
+.count:hover,
+.height-change:hover,
+.width-change:hover {
   background: #1d49aa;
+}
+
+.scale-wrap {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.height-change {
+  margin-right: 5px;
 }
 
 .count-wrap {
@@ -45,7 +61,7 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .tem {
@@ -72,8 +88,9 @@ li {
   text-align: center;
   /* contentをrelativeしてる */
   position: absolute;
-  left: 36%;
-  top: -0.8%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
   border-radius: 10px;
   background-color: white;
   padding: 4px;
@@ -97,8 +114,6 @@ li {
 
 .content {
   display: none;
-  width: 25%;
-  position: relative;
 }
 
 .content.selected {
@@ -107,12 +122,20 @@ li {
   position: relative;
 }
 
+.selected.twice {
+  width: 50%;
+}
+
 .wrap {
   border: 2px solid black;
-  height: 60vh;
+  height: calc(100vh - 280px);
   overflow-y: auto;
   padding: 30px 10px;
   margin: 18px;
+}
+
+.half {
+  height: calc(50vh - 145px);
 }
 
 .text-wrap {
