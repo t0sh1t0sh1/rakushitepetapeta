@@ -16,7 +16,8 @@ li {
 
 .count,
 .height-change,
-.width-change {
+.width-change,
+.scroll-action {
   appearance: none;
   border: 0;
   border-radius: 5px;
@@ -28,8 +29,24 @@ li {
 
 .count:hover,
 .height-change:hover,
-.width-change:hover {
+.width-change:hover,
+.scroll-action:hover {
   background: #1d49aa;
+}
+
+.balloon {
+  display: none;
+  width: 300px;
+  margin-top: 12px;
+  padding: 8px 8px 8px 32px;
+  background-color: #1d49aa;
+  color: #fff;
+  font-size: 80%;
+  text-align: left;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 0);
 }
 
 .scale-wrap {
@@ -40,7 +57,12 @@ li {
   left: 8px;
 }
 
-.height-change {
+.scale-wrap:hover .balloon {
+  display: inline;
+}
+
+.height-change,
+.width-change {
   margin-right: 5px;
 }
 
@@ -138,12 +160,18 @@ li {
   height: calc(50vh - 145px);
 }
 
+.scroll-wrap {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
 .text-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px dashed gray;
   padding-bottom: 20px;
+  scroll-snap-align: center;
 }
 
 .text-wrap > p {

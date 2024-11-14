@@ -83,6 +83,14 @@ heightChange.addEventListener("click", () => {
 
 widthChange.addEventListener('click', () => {
   tempWidth.forEach(e => {
-    e.classList.toggle('twice')
+    e.classList.toggle('twice');
+  });
+});
+
+// scroll調整
+const scrollChange = document.querySelector('.scroll-action');
+scrollChange.addEventListener("click", () => {
+  tempHeight.forEach(e => {
+    e.classList.toggle('scroll-wrap');
   });
 });
