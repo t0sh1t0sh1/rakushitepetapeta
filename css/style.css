@@ -106,7 +106,7 @@ li {
 }
 
 .tem-title {
-  width: 100px;
+  width: 120px;
   text-align: center;
   /* contentをrelativeしてる */
   position: absolute;
@@ -119,19 +119,19 @@ li {
 }
 
 .shinkiagari {
-  border: 4px solid lime;
+  border: 3px solid lime;
 }
 
 .apo {
-  border: 4px solid red;
+  border: 3px solid red;
 }
 
-.kanni {
-  border: 4px solid rgb(173, 246, 240);
+.keigo {
+  border: 3px solid rgb(229, 137, 241);
 }
 
 .love {
-  border: 4px solid #ff1493;
+  border: 3px solid #ff1493;
 }
 
 .content {
@@ -175,7 +175,7 @@ li {
 }
 
 .text-wrap > p {
-  width: 70%;
+  width: 80%;
 }
 
 span {
